@@ -8,3 +8,8 @@ while (x >= 1) {
 }
 
 */
+
+for (let index = 9; index >= 1; index--) {
+  console.log(`Hello ${index}`);
+  
+}
