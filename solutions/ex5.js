@@ -1,5 +1,5 @@
-const shirtWidth = 19; 
-const shirtLength = 29.5; 
+const shirtWidth = 21; 
+const shirtLength = 28; 
 const shirtSleeve = 8.60;
 let sizeResult = "N/A"
 
@@ -45,8 +45,6 @@ if (shirtWidth>=18 && shirtWidth<20){
         }
     }
     
-} else {
-    sizeResult ="N/A";
 }
 
 console.log(sizeResult);
