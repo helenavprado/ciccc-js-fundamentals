@@ -9,16 +9,16 @@ four weapons: poison, a trophy, a pool stick, and a knife,
 and four suspects: Mr. Parkes, Ms. Van Cleve, Mrs. Sparr, and Mr. Kalehoff.
 We also know that each weapon corresponds to a particular room, so...
 
-- the poison belongs to the ballroom,
-- the trophy belongs to the gallery,
-- the pool stick belongs to the billiards room,
-- and the knife belongs to the dining room.
+ballroom,
+gallery,
+billiards room,
+dining room.
 
 And we know that each suspect was located in a specific room at the time of the murder:
-- Mr. Parkes was located in the dining room.
-- Ms. Van Cleve was located in the gallery.
-- Mrs. Sparr was located in the billiards room.
-- Mr. Kalehoff was located in the ballroom.
+- Mr. Parkes
+- Ms. Van Cleve 
+- Mrs. Sparr
+- Mr. Kalehoff
 
 To help solve this mystery, write a combination of conditional statements that:
 
@@ -33,3 +33,25 @@ What goes into the three blank spaces? You can fill in the blanks with the name 
 
 Mr. Parkes did it in the dining room with the knife!
 */
+
+
+let room = "dining room";
+let murder = "Mr. Parkes"
+let weapon = "knife"
+let solved = false;
+
+if (room === "ballroom" && murder === "Mr. Kalehoff" && weapon === "poison") {
+    console.log(murder + " did it in the " + room + " with the " + weapon);
+    solved = true;
+} else if (room === "gallery" && murder === "Ms. Van Cleve" && weapon === "trophy") {
+    console.log(murder + " did it in the " + room + " with the " + weapon);
+    solved = true; 
+} else if (room === "billiards room" && murder === "Mrs. Sparr" && weapon === "pool stick") {
+    console.log(murder + " did it in the " + room + " with the " + weapon);
+    solved = true; 
+} else if (room === "dining room" && murder === "Mr. Parkes" && weapon === "knife") {
+    console.log(murder + " did it in the " + room + " with the " + weapon);
+    solved = true;
+} else {
+    console.log("mistery remains unsolved");
+}
