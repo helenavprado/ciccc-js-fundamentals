@@ -37,7 +37,6 @@ function makeLine(length) {
 }
 
 
-
 function buildTriangle(base) { 
   for (let x = 1; x <= base; x++) {
   console.log(makeLine(x));
